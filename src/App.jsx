@@ -1,22 +1,23 @@
 import "./App.css";
 import Square from "./components/Square";
+
 function App() {
   return (
     <div className="container">
       <h1>Tic Tac Toe</h1>
 
       <div className="board">
-        <Square />
-        <Square />
-<Square />
+        <Square value="X" />
+        <Square value="O" />
+        <Square value="X" />
 
-<Square />
-<Square />
-<Square />
+        <Square value="O" />
+        <Square value="X" />
+        <Square value="O" />
 
-<Square />
-<Square />
-<Square />
+        <Square value="X" />
+        <Square value="O" />
+        <Square value="X" />
       </div>
     </div>
   );
