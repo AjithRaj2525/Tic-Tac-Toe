@@ -1,13 +1,25 @@
-// Square is a reusable component.
-// It receives:
-// value -> X, O, or null
-// onSquareClick -> function to run when the square is clicked
-
 function Square({ value, onSquareClick }) {
   return (
     <button
-      className="square"
       onClick={onSquareClick}
+      className="
+        aspect-square
+        w-full
+        rounded-2xl
+        border
+        border-white/20
+        bg-white/10
+        text-5xl
+        font-bold
+        text-white
+        shadow-lg
+        backdrop-blur-md
+        transition-all
+        duration-300
+        hover:bg-white/20
+        hover:scale-105
+        active:scale-95
+      "
     >
       {value}
     </button>
